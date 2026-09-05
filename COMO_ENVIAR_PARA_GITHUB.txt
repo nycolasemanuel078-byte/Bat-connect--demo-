@@ -1,0 +1,9 @@
+NO CELULAR:
+1. Baixe Bat-connect--demo.zip.
+2. No app Arquivos, abra Downloads.
+3. Toque no ZIP e escolha Extrair.
+4. Volte ao GitHub e toque em "escolha seus arquivos".
+5. Entre na pasta Bat-connect--demo extraída.
+6. Selecione os arquivos e pastas do projeto e envie.
+7. Em "Confirmar alterações", escreva: Adiciona demo inicial Bat Connect
+8. Confirme o commit.
