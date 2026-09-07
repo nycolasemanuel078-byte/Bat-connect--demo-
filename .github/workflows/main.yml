@@ -1,4 +1,4 @@
-name: Build Bat Connect APK
+name: Build Bat Connect APK 
 
 on:
   workflow_dispatch:
