@@ -1,3 +1,9 @@
+
+import 'package:flutter/material.dart';
+
+import 'core/theme/app_theme.dart';
+import 'features/auth/login_screen.dart';
+
 void main() {
   runApp(const BatConnectApp());
 }
@@ -10,24 +16,8 @@ class BatConnectApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Bat Connect',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
-        useMaterial3: true,
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Bat Connect',
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              color: Colors.orange,
-            ),
-          ),
-        ),
-      ),
+      theme: AppTheme.lightTheme,
+      home: const LoginScreen(),
     );
   }
 }
-
-
