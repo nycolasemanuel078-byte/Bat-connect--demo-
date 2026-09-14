@@ -1,0 +1,20 @@
+BAT CONNECT - ZIP CORRIGIDO (VERSÃO 2)
+
+Correções aplicadas:
+1. android/settings.gradle restaurado para o modelo moderno do Flutter, com includeBuild do Flutter SDK.
+2. Plugins Android/Kotlin receberam versões compatíveis com Flutter 3.47.3 (AGP 8.7.3 / Kotlin 2.1.0).
+3. android/app/build.gradle corrigido para usar o plugin Flutter e source = "../..".
+4. SDK/versões do app passam a seguir os valores do Flutter.
+5. Java/Kotlin configurados para JVM 17.
+6. Gradle Wrapper fixado na versão 8.9; a versão 9.3.1 era incompatível com o conjunto Android do projeto.
+7. Workflow do GitHub fixa Flutter 3.47.3 e executa flutter analyze antes de gerar o APK.
+8. Ícone Android alterado para um recurso do próprio sistema porque o ZIP não continha a pasta mipmap/ic_launcher.
+
+No Codespaces, depois de substituir o projeto por este ZIP, rode na raiz:
+
+flutter clean
+flutter pub get
+flutter build apk --release
+
+APK esperado:
+build/app/outputs/flutter-apk/app-release.apk
