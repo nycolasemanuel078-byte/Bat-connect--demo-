@@ -31,7 +31,7 @@ jobs:
 
       - name: Baixar dependencias
         run: flutter pub get
-
+ 
       - name: Compilar APK
         run: flutter build apk --release
 
