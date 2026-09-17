@@ -1,0 +1,13 @@
+BAT CONNECT - CORRECAO DO BUILD ANDROID - 17/09/2026
+
+Alteracoes aplicadas:
+1. Gradle fixado em 8.14.3 no wrapper do projeto.
+2. Android Gradle Plugin (AGP) atualizado de 8.7.3 para 8.11.1.
+3. Kotlin mantido em 2.1.0.
+4. Java/JVM target mantido em 17.
+5. android.newDsl=false e android.builtInKotlin=false adicionados para compatibilidade durante a migracao.
+6. Gradle Wrapper agora esta dentro do projeto; removido o script que tentava cria-lo durante o build.
+7. Bat Collect conferido: somente PIX e boleto; nao ha cartao de credito no codigo atual.
+
+Observacao de validacao:
+O ambiente usado para preparar este ZIP nao possui Flutter SDK nem acesso de rede ao repositório Gradle, portanto o APK nao foi compilado aqui. A estrutura e as versoes foram alinhadas para a nova tentativa no GitHub Actions/Codespaces.

@@ -1,0 +1,16 @@
+BAT CONNECT DEMO v1.4.0 - FIREBASE CONFIGURADO
+Data: 06/09/2026
+
+CONFIGURACAO APLICADA
+- google-services.json real incluído em android/app/google-services.json.
+- Pacote Android ajustado para com.batconnect.app, igual ao app registrado no Firebase.
+- Plugin com.google.gms.google-services ativado no Gradle.
+- Firebase inicializa automaticamente ao abrir o app.
+- Firestore continua usando demoOperations/shared_demo para sincronizar a demo entre aparelhos.
+- Se Firebase falhar, o app mostra aviso e cai para modo local em vez de fechar.
+
+IMPORTANTE
+- O Cloud Firestore precisa estar criado/ativado no Console Firebase.
+- As regras firestore.rules precisam ser publicadas para a colecao demoOperations funcionar.
+- As regras atuais sao abertas apenas para teste e NAO devem ser usadas em producao.
+- Authentication, Storage, FCM, Google Maps real e pagamentos reais continuam fora desta demo.

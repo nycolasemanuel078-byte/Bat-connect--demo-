@@ -1,0 +1,28 @@
+BAT CONNECT DEMO v1.3.0 - CORRIGIDA
+
+IMPLEMENTADO NESTA VERSAO
+- Fluxo Empresa <-> Batedor usando estado compartilhado.
+- Repositorio local para testar sem backend.
+- Repositorio Cloud Firestore opcional para sincronizar aparelhos diferentes.
+- Inicializacao Firebase por --dart-define, sem obrigar google-services.json.
+- GPS real via geolocator com distanceFilter de 15 m.
+- Permissoes Android de internet e localizacao.
+- Empresa acompanha aceite, check-in, inicio, conclusao e ultima localizacao.
+- Batedor: online/offline, aceitar, recusar, check-in, iniciar, finalizar.
+- Reinicio global da demo.
+- Bat Collect mantido como fluxo demonstrativo PIX/boleto e split 10%/90%.
+
+AINDA NAO IMPLEMENTADO
+- Google Maps real / polylines.
+- Firebase Authentication e perfis reais.
+- FCM/push notifications.
+- Firebase Storage para selfie e comprovante de entrega.
+- Ledger financeiro real / PIX / boleto.
+- Regras de producao do Firestore.
+
+
+CORRECOES v1.3.0
+- Menus do Batedor agora navegam para telas demonstrativas reais.
+- Bat Collect do Admin abre tela própria.
+- Ajuste de navegacao do Drawer para evitar toque sem resposta visivel.
+- Fluxo principal Empresa -> Batedor permanece funcional e compartilhado.

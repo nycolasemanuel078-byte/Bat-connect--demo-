@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // REGRA TEMPORÁRIA PARA A DEMO.
+    // O acesso público fica limitado a UM ÚNICO documento compartilhado.
+    // Antes de produção, substituir por Firebase Authentication + papéis.
+    match /demoOperations/shared_demo {
+      allow read, write: if true;
+    }
+
+    // Todo o restante permanece bloqueado nesta regra de demonstração.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

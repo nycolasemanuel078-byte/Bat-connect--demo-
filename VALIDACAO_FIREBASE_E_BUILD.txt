@@ -1,0 +1,30 @@
+BAT CONNECT DEMO v1.4 - VALIDACAO FIREBASE E BUILD
+
+Projeto Firebase: bat-connect-7172d
+Pacote Android: com.batconnect.app
+Arquivo android/app/google-services.json: presente
+Plugin com.google.gms.google-services: configurado
+Firebase Core + Cloud Firestore: configurados
+
+MELHORIAS DESTA REVISAO
+- O app testa acesso REAL ao Firestore durante a inicializacao.
+- Se Firestore estiver indisponivel, o app cai para modo local com aviso.
+- A regra de demo publica foi restringida ao documento demoOperations/shared_demo.
+- firebase.json e .firebaserc foram adicionados para publicar as regras.
+- Foi adicionado script para reconstruir o Gradle Wrapper com o Flutter instalado.
+- Foi adicionado script de build debug.
+
+NO COMPUTADOR COM FLUTTER
+1. Na raiz do projeto: bash scripts/build_debug_apk.sh
+2. APK esperado: build/app/outputs/flutter-apk/app-debug.apk
+
+PARA SINCRONIZAR DOIS CELULARES
+1. No Firebase Console, criar/ativar Cloud Firestore.
+2. Publicar firestore.rules (console ou script deploy_demo_firestore_rules.sh).
+3. Instalar o mesmo APK nos dois aparelhos.
+4. Em um aparelho entrar como Empresa e confirmar equipe.
+5. No outro entrar como Batedor, ficar Online e aceitar.
+6. O estado deve atualizar nos dois aparelhos.
+
+ATENCAO
+As regras atuais servem SOMENTE para a demo. Produção exige Authentication e regras por usuário/papel.

@@ -2,8 +2,8 @@
 .packages
 .pub/
 build/
-.idea/
-.vscode/
-*.iml
 .flutter-plugins
 .flutter-plugins-dependencies
+.idea/
+*.iml
+android/.gradle/

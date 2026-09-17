@@ -1,0 +1,33 @@
+BAT CONNECT DEMO v1.3.0 - DIAGNOSTICO E CORRECAO
+Data: 06/09/2026
+
+DIAGNOSTICO
+1. O fluxo principal ja possuia logica real no codigo:
+   Empresa confirma equipe -> Batedor fica online -> aceita -> check-in -> inicia -> finaliza.
+2. Parte dos itens do menu do Batedor nao abria nenhuma tela; apenas tentava mostrar uma mensagem temporaria apos fechar o Drawer.
+3. O Bat Collect do Administrador tambem era somente uma mensagem demonstrativa.
+4. Isso podia dar ao testador a impressao de que os botoes apenas eram pressionados e nada acontecia.
+
+CORRECOES APLICADAS
+- Versao alterada para 1.3.0+3.
+- Identificacao na tela inicial: DEMO FUNCIONAL v1.3 - CORRIGIDA.
+- Todos os itens do menu do Batedor agora abrem uma tela demonstrativa visivel.
+- Navegacao do Drawer usa o Navigator pai antes/depois de fechar o menu.
+- Bat Collect do Administrador agora abre uma tela demonstrativa propria.
+- Mantido o estado compartilhado entre Empresa e Batedor.
+- Mantidos GPS real via geolocator e Firebase opcional.
+
+ROTEIRO DE TESTE
+1. Abrir Empresa e tocar CONFIRMAR EQUIPE.
+2. Voltar para a tela inicial.
+3. Abrir Batedor.
+4. Ativar ONLINE.
+5. Tocar ACEITAR.
+6. Conceder permissao de localizacao, se solicitada.
+7. Tocar FAZER CHECK-IN.
+8. Tocar INICIAR OPERACAO.
+9. Tocar FINALIZAR / REGISTRAR ENTREGA.
+10. Abrir o menu lateral e testar cada modulo; todos devem abrir uma nova tela.
+
+OBSERVACAO
+Sem --dart-define=USE_FIREBASE=true e credenciais Firebase, o aplicativo funciona em modo Demo local no mesmo aparelho/processo. Para sincronizacao entre aparelhos, gerar o APK com as credenciais Firebase conforme README.md.
