@@ -1,0 +1,23 @@
+BAT CONNECT DEMO v1.4.1 - CORRIGIDA PARA BUILD E FIREBASE
+
+Conferido e mantido:
+- Firebase habilitado por padrão.
+- Projeto Firebase bat-connect-7172d.
+- Pacote Android com.batconnect.app.
+- Sincronização da demo em demoOperations/shared_demo.
+- PIX e boleto apenas; cartão de crédito não aparece no fluxo atual.
+- Split demonstrativo 10% plataforma / 90% prestador.
+- GPS/permissões Android mantidos.
+- Ícone Bat Connect mantido nos mipmaps Android.
+
+Correção de compilação:
+- Workflow GitHub Actions criado em .github/workflows/build-apk.yml.
+- Workflow usa Flutter 3.47.3 e Java 17.
+- Gradle Wrapper é reconstruído pelo próprio Flutter instalado antes do build,
+  evitando reutilizar wrapper antigo/incompatível.
+- Build gera APK debug de teste e publica como artifact:
+  BatConnect-Demo-v1.4.1-corrigido.apk.
+
+Observação:
+- Não foi alterado o fluxo funcional do aplicativo além da identificação de versão.
+- Regras atuais do Firestore são somente para a demo/teste, não produção.
