@@ -1,0 +1,11 @@
+Bat Connect - correção de compilação
+Data: 18/09/2026
+
+Preservado: lib/main.dart e interface moderna.
+Alterações somente na infraestrutura Android/GitHub Actions:
+- Gradle Wrapper: 9.3.1 -> 8.14.3
+- Android Gradle Plugin: 9.1.0 -> 8.11.1
+- Kotlin Android: 2.4.0 -> 2.1.0
+- GitHub Actions agora recria android/local.properties no runner e garante permissão do gradlew.
+- Java 17 mantido.
+- flutter build apk --release mantido.
